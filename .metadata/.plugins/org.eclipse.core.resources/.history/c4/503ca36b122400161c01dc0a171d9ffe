@@ -1,0 +1,50 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+class Edge{
+
+	private:
+		int name;
+
+	public:
+		Edge(int name){
+			this->name = name;
+		}
+};
+
+class Vertex {
+	private:
+		int from, to;
+
+	public:
+		Vertex(int from, int to){
+			this->from = from;
+			this->to = to;
+		}
+};
+
+
+int main () {
+  string line;
+  ifstream myfile ("testfile");
+  if (myfile.is_open())
+  {
+    while ( getline (myfile,line) )
+    {
+      cout << line << '\n';
+    }
+    myfile.close();
+
+    Edge e1(1);
+    Edge e2(2);
+    Vertex v(1,2);
+  }
+
+  else cout << "Unable to open file";
+
+  return 0;
+}
+

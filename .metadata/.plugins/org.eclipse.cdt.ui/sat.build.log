@@ -1,0 +1,13 @@
+15:34:25 **** Build of configuration Debug for project sat ****
+make all 
+Building file: ../riss/src/unitpropagation/dual_list_propagation.cc
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"riss/src/unitpropagation/dual_list_propagation.d" -MT"riss/src/unitpropagation/dual_list_propagation.d" -o "riss/src/unitpropagation/dual_list_propagation.o" "../riss/src/unitpropagation/dual_list_propagation.cc"
+../riss/src/unitpropagation/dual_list_propagation.cc:5:51: fatal error: unitpropagation/dual_list_propagation.h: Datei oder Verzeichnis nicht gefunden
+ #include "unitpropagation/dual_list_propagation.h"
+                                                   ^
+compilation terminated.
+make: *** [riss/src/unitpropagation/dual_list_propagation.o] Fehler 1
+
+15:34:25 Build Finished (took 216ms)
+
