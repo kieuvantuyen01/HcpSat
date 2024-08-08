@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include <string>
 #include <thread>
+#include <set>
 
 using namespace std;
 
@@ -497,7 +498,7 @@ int main(int argc, char* argv[]) {
 		varLength = positionLength + nodeLength;
 
 		createOutput(vertices, edges, positionLength, nodeLength, sameLength);
-		system("riss64 output.txt satResult.txt 2>/dev/null 1>/dev/null");
+		system("riss output.txt satResult.txt 2>/dev/null 1>/dev/null");
 
 
 		//parse result of sat solver
